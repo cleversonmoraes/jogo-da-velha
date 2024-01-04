@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    background-color: beige;
+    display: inline-block;
+}
+
+
+/* PLAYERS */
+.o {
+    position: relative;
+}
+
+.o::after {
+    content: "\1F6E1";
+    font-size: 50px;
+    line-height: 100px;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.reset {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.reset:hover {
+    border: 1px solid beige;
+}
